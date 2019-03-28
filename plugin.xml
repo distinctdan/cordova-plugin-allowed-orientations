@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-allowed-orientations"
+        version="1.0.0">
+    <name>Allowed Orientations</name>
+    <description>Cordova Plugin Allowed Orientations</description>
+    <author>DistinctDan</author>
+    <keywords>cordova,allowed,orientations,orientation</keywords>
+    <repo>https://github.com/distinctdan/cordova-plugin-allowed-orientations.git</repo>
+
+    <platform name="android">
+        <preference name="AllowedOrientationsAndroid" default="unspecified"></preference>
+
+        <edit-config file="AndroidManifest.xml"
+                     target="/manifest/application/activity[@android:name='MainActivity']"
+                     mode="merge">
+            <activity android:screenOrientation="$AllowedOrientationsAndroid"></activity>
+        </edit-config>
+    </platform>
+
+    <platform name="ios">
+        <!-- ios-specific elements -->
+    </platform>
+</plugin>
