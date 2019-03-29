@@ -1,0 +1,39 @@
+{
+  "name": "cordova-plugin-allowed-orientations",
+  "version": "1.0.0",
+  "description": "Cordova Plugin Allowed Orientations",
+  "cordova": {
+    "id": "cordova-plugin-allowed-orientations",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/distinctdan/cordova-plugin-allowed-orientations.git"
+  },
+  "keywords": [
+    "cordova",
+    "allowed",
+    "orientations",
+    "orientation",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "DistinctDan",
+  "license": "",
+  "engines": {
+    "cordovaDependencies": {
+      "1.0.0": {
+        "cordova-android": ">=8.0.0",
+        "cordova-ios": ">=5.0.0"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/distinctdan/cordova-plugin-allowed-orientations/issues"
+  },
+  "homepage": "https://github.com/distinctdan/cordova-plugin-allowed-orientations"
+}
